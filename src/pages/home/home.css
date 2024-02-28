@@ -1,0 +1,45 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+}
+
+.home-button {
+  width: 130px;
+  height: 35px;
+  color: #626262;
+  letter-spacing: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #efa989;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-button:hover {
+  border: 2px solid #efa989;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-container-product {
+  width: 100%;
+}

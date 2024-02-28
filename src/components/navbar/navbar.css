@@ -1,0 +1,243 @@
+.navbar {
+}
+
+.navbar-top {
+  width: 100vw;
+  height: 40px;
+  background-color: #efa989;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.navbar-section {
+  margin: 0.7rem 0 1rem 0;
+  padding-bottom: 1rem;
+  /* border-bottom: 1px solid #cccccc;  Border on the bottom */
+  /* box-shadow: 0 2px 4px rgba(196, 194, 194, 0.1); Light shadow effect */
+}
+
+.navbar-middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  padding-bottom: 1rem;
+}
+
+.navbar-search-icons {
+  font-size: 30px;
+  color: #828080;
+  /* color: #efa989; */
+}
+
+#logo-img {
+  margin-left: 50px;
+  width: 400px;
+  height: 150px;
+}
+
+.navbar-login-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 30px;
+  color: #828080;
+  /* color: #efa989; */
+}
+
+.nav-cart-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -31px;
+  margin-left: -24px;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;
+  text-align: center;
+  background: red;
+  color: #fff;
+}
+
+i:hover {
+  color: #efa989;
+  cursor: pointer;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* .navbar-menu li:hover {
+  color: #efa989;
+  cursor: pointer;
+  text-decoration: underline;
+} */
+
+.navbar-menu li {
+  position: relative; /* Set the position to relative */
+  cursor: pointer; /* Add cursor pointer */
+  text-transform: uppercase;
+}
+
+.navbar-menu li::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  text-align: center;
+  background-color: #efa989; /* Color of the underline */
+  color: #efa989;
+  bottom: -5px; /* Adjust the position of the underline */
+  left: 0;
+  transition: width 0.3s; /* Add transition effect for width */
+}
+
+.navbar-menu li:hover::before {
+  width: 96%; /* Expand the width to 100% on hover */
+}
+
+@media only screen and (max-width: 768px) {
+  #logo-img {
+    margin-left: 50px;
+    width: auto;
+    max-height: 75px;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .navbar-top {
+    font-size: 9px;
+  }
+  .navbar-search-icons {
+    font-size: 18px;
+    color: #626262;
+    /* color: #efa989; */
+  }
+
+  #logo-img {
+    margin-left: 12px;
+    width: 200px;
+    height: 75px;
+  }
+
+  .navbar-login-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    color: #626262;
+    /* color: #efa989; */
+  }
+
+  .navbar-menu {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #626262;
+    letter-spacing: 3px;
+  }
+
+  .navbar-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-menu li {
+    padding: 2rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+
+  .hamburger-menu .bar {
+    width: 20px;
+    height: 2px;
+    background-color: #626262;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; /* Align the menu items to the center */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px; /* Adjust the top position as needed */
+    left: 0; /* Align to the left */
+    gap: 0px;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Set the background color with some opacity */
+    backdrop-filter: blur(17px); /* Apply blur to the background color */
+    padding: 50px;
+    font-weight: 600;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a better look */
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    padding: 1rem;
+    text-align: left; /* Align the text to the left */
+  }
+  .navbar-search-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-icon {
+    display: none;
+  }
+}
