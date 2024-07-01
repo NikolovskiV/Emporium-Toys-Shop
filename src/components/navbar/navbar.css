@@ -1,4 +1,28 @@
+.logout-button {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  color: #f00; /* Change to desired hover color */
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
 }
 
 .navbar-top {
@@ -15,7 +39,7 @@
 
 .navbar-section {
   margin: 0.7rem 0 1rem 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0.7rem;
   /* border-bottom: 1px solid #cccccc;  Border on the bottom */
   /* box-shadow: 0 2px 4px rgba(196, 194, 194, 0.1); Light shadow effect */
 }
@@ -35,9 +59,9 @@
 }
 
 #logo-img {
-  margin-left: 50px;
-  width: 400px;
-  height: 150px;
+  margin-left: 60px;
+  width: 370px;
+  height: 120px;
 }
 
 .navbar-login-icons {
@@ -63,13 +87,21 @@
   font-weight: bold;
   padding-left: 5px;
   text-align: center;
-  background: red;
+  background: rgba(236, 35, 35, 0.828);
   color: #fff;
 }
 
 i:hover {
   color: #efa989;
   cursor: pointer;
+}
+
+#login-btn-text {
+  font-size: 14px;
+}
+
+.login-user-container #login-span:hover {
+  color: #efa989;
 }
 
 .navbar-bottom {
@@ -89,6 +121,22 @@ i:hover {
   letter-spacing: 4px;
   font-weight: 500;
   margin-top: 10px;
+}
+
+a {
+  color: #828080;
+  text-decoration: none; /* Remove underline */
+}
+
+.login-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-span {
+  cursor: pointer;
+  font-size: 17px;
 }
 
 /* .navbar-menu li:hover {
@@ -118,6 +166,12 @@ i:hover {
 
 .navbar-menu li:hover::before {
   width: 96%; /* Expand the width to 100% on hover */
+}
+
+#log-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 768px) {

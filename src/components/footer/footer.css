@@ -1,11 +1,37 @@
+.main-content {
+  flex-grow: 1;
+}
+
 .footer-container {
+  position: fixed;
+  bottom: 0;
+  flex-shrink: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 250px;
   border-top: 1px solid #efa989;
   box-shadow: 0 2px 4px rgba(196, 194, 194, 0.1);
-  padding: 1rem;
+
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.logged-out .footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Ensure footer takes full width */
+}
+
+.logged-in .footer-container {
+  margin-top: auto; /* Push footer to the bottom of the content */
 }
 
 .footer-info {
@@ -17,25 +43,26 @@
 
 .footer-social-network {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   font-size: 30px;
   color: #efa989;
-  padding: 0rem 0 2rem 0;
+  margin-right: 1.6rem;
+  padding: 0.6rem 0 0rem 0;
 }
 
 #logo-img-footer {
-  width: 380px;
-  height: 150px;
+  width: 300px;
+  height: 100px;
 }
 
 .footer-company-info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: start;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 0.7rem;
 }
 
 .bxs-user,
@@ -68,8 +95,8 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: start;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 0.7rem;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -82,9 +109,27 @@ h3 {
 .footer-right {
   text-align: center;
   color: #626262;
+  margin-left: 4rem;
   letter-spacing: 3px;
   font-size: 10px;
 }
+
+.footer-container a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .footer-unfo-user .bxs-user:hover,
+.bxs-envelope:hover,
+.bxl-internet-explorer:hover,
+.bxs-phone:hover {
+font-size: 18px;
+} */
+
+/* .bxs-user span:hover {
+  font-weight: 400;
+  font-size: 14px;
+} */
 
 @media screen and (max-width: 970px) {
   .footer-container {

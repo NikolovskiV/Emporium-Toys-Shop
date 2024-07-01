@@ -13,6 +13,7 @@ const ToyGallery = ({ toys, showAllRows }) => {
           name={toy.name}
           imageUrl={toy.imageUrl}
           price={toy.price}
+          details={toy.details}
         />
       ))}
     </div>

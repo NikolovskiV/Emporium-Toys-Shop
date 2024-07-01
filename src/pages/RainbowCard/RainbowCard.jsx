@@ -16,14 +16,14 @@ const RainbowCard = ({ name, imageUrl, price }) => {
       <img src={imageUrl} alt={name} />
       <h4>{name}</h4>
       <p id="price">{price} $</p>
-      {/* <div className="button-container">
+      <div className="button-container">
         <button className="buy-button" onClick={handleBuyClick}>
           Buy
         </button>
         <button className="info-button" onClick={handleInfoClick}>
           Info
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,106 @@
+.app {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Toy Card Container */
+.toy-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.toy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.toy-card img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.toy-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 10px 0;
+}
+
+#price {
+  font-size: 1.2rem;
+  color: #888;
+  padding-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.buy-button,
+.info-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover,
+.info-button:hover {
+  background-color: #0056b3;
+}
+
+.buy-button:active,
+.info-button:active {
+  transform: scale(0.95);
+}
+
+/* Toy Info Page */
+.toy-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toy-info img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.toy-info h4 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.toy-info #price {
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 10px;
+}

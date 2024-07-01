@@ -1,0 +1,108 @@
+/* LoginModal.css */
+
+.login-modal {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 35%;
+}
+
+.login-modal h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-modal form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-modal input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-modal button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* LoginModal.css */
+
+.create-account {
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.create-account p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.create-account p {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.create-account p:hover {
+  color: #efa989; /* Change color on hover */
+}
+
+#login-logo {
+  width: 250px;
+}
+
+/* New styles for close button */
+#close-button-id {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #5c5757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #5c5757;
+}
+
+#close-button-id:hover {
+  color: #ffffff;
+  background: #efa989;
+}

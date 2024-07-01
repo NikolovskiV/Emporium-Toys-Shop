@@ -2,100 +2,74 @@ const toysData = [
     {
         id: 1,
         name: 'Scooper',
-        imageUrl: '../../Images/1.jpeg',
-        price: 14.50
+        imageUrl: '/Images/1.jpeg',
+        price: 14.50,
+        details: ''
+
     },
     {
         id: 2,
         name: 'Bugatti Divo',
-        imageUrl: '../Images/2.jpeg',
-        price: 45.90
+        imageUrl: '/Images/2.jpeg',
+        price: 45.90,
+        details: 'The Bugatti Divo toy epitomizes automotive excellence in a compact form. Designed with meticulous attention to detail, it mirrors the sleek and aerodynamic contours of its real-life counterpart, including signature features like the horseshoe grille and dynamic spoilers. Some versions boast interactive elements such as functioning lights and realistic engine sounds, enhancing the play experience. Crafted from premium materials, it offers durability and a luxurious feel, ideal for both enthusiasts and collectors alike. Available in various scales, the Bugatti Divo toy combines educational value with the thrill of owning a scaled-down masterpiece, making it a prestigious gift for anyone captivated by automotive marvels.'
     },
-    // {
-    //     id: 3,
-    //     name: 'Toy 3',
-    //     imageUrl: '../Images/3.jpeg',
-    //     price: 15.99
-    // },
-    // {
-    //     id: 4,
-    //     name: 'Toy 4',
-    //     imageUrl: '../Images/4.jpeg',
-    //     price: 15.99
-    // },
     {
         id: 5,
         name: 'Archie Elephant',
-        imageUrl: '../Images/5.jpeg',
-        price: 25.40
+        imageUrl: '/Images/5.jpeg',
+        price: 25.40,
+        details: ''
     },
     {
         id: 6,
         name: 'Toys for Girls',
-        imageUrl: '../Images/6.jpeg',
-        price: 13.40
+        imageUrl: '/Images/6.jpeg',
+        price: 13.40,
+        details: ''
     },
     {
         id: 7,
         name: 'Passenger aircraft',
-        imageUrl: '../Images/7.jpeg',
-        price: 50.70
+        imageUrl: '/Images/7.jpeg',
+        price: 50.70,
+        details: ''
     },
     {
         id: 8,
         name: 'Toy airplane',
-        imageUrl: '../Images/8.jpeg',
-        price: 20.99
+        imageUrl: '/Images/8.jpeg',
+        price: 20.99,
+        details: ''
     },
     {
         id: 9,
         name: 'Ocho the Octopus',
-        imageUrl: '../Images/9.jpeg',
-        price: 23.90
+        imageUrl: '/Images/9.jpeg',
+        price: 23.90,
+        details: ''
     },
-    // {
-    //     id: 10,
-    //     name: 'Toy 10',
-    //     imageUrl: '../Images/10.jpeg',
-    //     price: 15.99
-    // },
-    // {
-    //     id: 11,
-    //     name: 'Toy 11',
-    //     imageUrl: '../Images/11.jpeg',
-    //     price: 15.99
-    // },
     {
         id: 12,
         name: 'Super Sonic',
-        imageUrl: '../Images/12.jpeg',
-        price: 22.60
+        imageUrl: '/Images/12.jpeg',
+        price: 22.60,
+        details: ''
     },
-    // {
-    //     id: 13,
-    //     name: 'Toy 13',
-    //     imageUrl: '../Images/13.jpeg',
-    //     price: 15.99
-    // },
     {
         id: 14,
         name: 'Transport Truck',
-        imageUrl: '../Images/14.jpeg',
-        price: 35.20
+        imageUrl: '/Images/14.jpeg',
+        price: 35.20,
+        details: ''
     },
-    // {
-    //     id: 15,
-    //     name: 'Toy 15',
-    //     imageUrl: '../Images/15.jpeg',
-    //     price: 15.99
-    // },
     {
         id: 16,
         name: 'Whiskers the Bunny',
-        imageUrl: '../Images/16.jpeg',
-        price: 14.80
+        imageUrl: '/Images/16.jpeg',
+        price: 14.80,
+        details: ''
     }
-    // Add more toy objects as needed
 ];
 
 export default toysData;
